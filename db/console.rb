@@ -1,5 +1,6 @@
 require_relative("../models/artists")
 require_relative("../models/albums")
+require('pp')
 
 artist1 = Artist.new({
 		'name' => 'U2'
@@ -8,6 +9,7 @@ artist1 = Artist.new({
 p artist1
 
 artist1.save()
+p Artist.all()
 
 album1 = Album.new({
 	'title' => "Joshua Tree",
@@ -17,3 +19,4 @@ album1 = Album.new({
 
 p album1
 album1.save()
+pp Album.all()
