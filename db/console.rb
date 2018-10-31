@@ -22,3 +22,5 @@ album1.save()
 pp Album.all()
 pp artist1.albums
 pp album1.artist
+
+pp Album.artist_by_id(artist1.id)
