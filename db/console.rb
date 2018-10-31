@@ -7,6 +7,8 @@ artist1 = Artist.new({
 
 p artist1
 
+artist1.save()
+
 album1 = Album.new({
 	'title' => "Joshua Tree",
 	'genre' => "rock",
@@ -14,3 +16,4 @@ album1 = Album.new({
 	})
 
 p album1
+album1.save()
