@@ -27,10 +27,10 @@ class Album
 		Artist.new(SqlRunner.run(sql, values).first)
 	end
 
-	def self.artist_by_id(id)
-		sql = "SELECT * FROM artists WHERE id = $1"
+	def self.album_by_id(id)
+		sql = "SELECT * FROM albums WHERE id = $1"
 		values = [id]
-		Artist.new(SqlRunner.run(sql, values).first)
+		Album.new(SqlRunner.run(sql, values).first)
 	end
 
 end

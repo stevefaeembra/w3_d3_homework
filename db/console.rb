@@ -23,4 +23,6 @@ pp Album.all()
 pp artist1.albums
 pp album1.artist
 
-pp Album.artist_by_id(artist1.id)
+pp Artist.artist_by_id(artist1.id)
+
+pp Album.album_by_id(album1.id)
