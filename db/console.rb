@@ -29,3 +29,12 @@ pp album1.artist
 pp Artist.artist_by_id(artist1.id)
 
 pp Album.album_by_id(album1.id)
+
+artist1.name = "Prince"
+artist1.update
+p Artist.all()
+pp Artist.artist_by_id(artist1.id)
+
+album1.genre = "prog-rock"
+album1.update
+pp Album.album_by_id(album1.id)
