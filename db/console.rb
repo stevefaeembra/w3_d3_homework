@@ -14,9 +14,10 @@ p Artist.all()
 album1 = Album.new({
 	'title' => "Joshua Tree",
 	'genre' => "rock",
-	'artist_id' => 1
+	'artist_id' => artist1.id
 	})
 
 p album1
 album1.save()
 pp Album.all()
+pp artist1.albums
