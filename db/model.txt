@@ -1,0 +1,16 @@
+Design
+
+Artist
+- id SERIAL4
+- name VARCHAR(255)
+
+
+Album
+- id SERIAL
+- title VARCHAR
+- genre VARCHAR
+- artist_id REFERENCE artist(id)
+
+Relationship
+
+Artist 1---M Album
